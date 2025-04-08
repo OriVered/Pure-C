@@ -2,8 +2,7 @@ File: ex0a.c
 meeting and knowing c language
 =================================================
 Written by: 
-	Ori Vered, id = 315545400, login = orive
-	Damian Tissembaum, id = 340888122, login = damianti
+	Ori Vered
 
 This program gets input and output files by argument vector. The program 
 builds a dynamic array inside called lines_len and in each cell it puts from 
