@@ -1,0 +1,33 @@
+File: ex0a.c
+meeting and knowing c language
+=================================================
+Written by: 
+	Ori Vered, id = 315545400, login = orive
+	Damian Tissembaum, id = 340888122, login = damianti
+
+This program gets input and output files by argument vector. The program 
+builds a dynamic array inside called lines_len and in each cell it puts from 
+the input file the first element of every row that represents the 
+length of that row. 
+The program will put the next elements of the input row in a two dimension 
+dynamic array called the_data.
+The program search for the first row that is max_row, meaning that every
+cell has the maximum value in all the rows of its column
+
+The program will print in the output file the first max_row or -1 if that row
+does not exist
+
+*runtime is O(rows*cols) because we run two times in _the_data (2d array)
+ once by its rows and once by its columns
+
+Compile: gcc -Wall ex0a.c -o ex0a
+Run: ./ex0a
+
+input:
+- input file with integer numbers in it
+
+output:
+- in the output file it will print the number of thwe first max_row found 
+or -1 if that row does not exist
+
+--------------------------------------------------------------------------

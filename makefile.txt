@@ -1,0 +1,15 @@
+my_prog: ex1a.o
+	g++ ex1a.o -o ex1a
+	echo "a new main was created"
+	./ex1asol <ex1a_test1.in> s1
+	./ex1asol <ex1a_test2.in> s2
+	./ex1asol <ex1a_test3.in> s3
+	./ex1a <ex1a_test1.in> m1
+	./ex1a <ex1a_test2.in> m2
+	./ex1a <ex1a_test3.in> m3
+	diff m0 s1
+	diff m1 s2
+	diff m2 s3
+
+ex1a.o: ex1a.cc 
+	g++ -Wall -c ex1a.cc
